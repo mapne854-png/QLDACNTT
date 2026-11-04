@@ -1,0 +1,1 @@
+<?php require_once __DIR__ . '/../includes/auth.php'; require_login(); if($_SERVER['REQUEST_METHOD']==='POST'){$_POST['action']='customer_delete'; include __DIR__ . '/../index.php'; exit;} header('Location: ../index.php?page=customers');
